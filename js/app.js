@@ -71,15 +71,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices', 'jagrut
                 }
             }
         })
-            .state('app.profile', {
-            url: "/profile",
-            views: {
-                'menuContent': {
-                    templateUrl: "templates/profile.html",
-                    controller: 'ProfileCtrl'
-                }
-            }
-        })
         .state('app.setting', {
             url: "/setting",
             views: {
@@ -99,7 +90,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices', 'jagrut
             }
         })
         .state('app.gallery-category', {
-            url: "/gallery-category/:id/:name",
+            url: "/gallery-category/:id",
             cache: false,
             views: {
                 'menuContent': {
